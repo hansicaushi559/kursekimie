@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #111;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Termat & Kushtet</h1>
+                        <p>Faleminderit që keni zgjedhur të përdorni kurse.kimie.al dhe shërbimet tona. Ne do t’i referohemi si “Shërbime“.
+                        Duke përdorur shërbimet tona, ju pranoni dhe merrni përsipër të respektoni plotësisht detyrimet tuaja sipas këtyre
+                        Kushteve, përndryshe do t’ju kërkojmë me mirësi të mos i përdorni shërbimet tona.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>E drejta e autorit</h1>
+                        <p>Informacioni nga kurse.kimie.al është i destinuar vetëm për individin(ët) te cilet kane kryer pagesat e sherbimeve
+                        perkatese.Nëse nuk jeni marrësi përkatës, kini kujdes që çdo zbulim, kopjim, shpërndarje ose përdorim i përmbajtjeve të
+                        këtij informacioni është i ndaluar. Nëse e keni marrë gabimisht këtë mesazh elektronik, ju lutemi kontaktoni urgjentisht
+                        nisësin e tij.
+                        
+                        Ne jemi të përkushtuar të mbrojmë të drejtat e autorit dhe angazhohemi që t’i respektojmë plotësisht këto të drejta. Të
+                        gjitha informacionet në përmbajtje, të vëna në dispozicion ose postuar përmes ndonjë prej shërbimeve tona, siç janë, por
+                        nuk kufizohen vetëm në: çdo tekst, grafikë, logo, imazhe, klipe audio, shkarkime dixhitale, të dhëna të grumbulluara
+                        dhe/ose programe kompjuterike janë pronë e jona, ose kontraktorët tanë, dhe mbrohen nga ligji për të drejtat e autorit
+                        të Republikës së Shqipërisë Nëse gjatë përdorimit të shërbimeve tona vini re se ndonjë e drejtë e autorit është shkelur,
+                        ju lutemi mos hezitoni të na kontaktoni përmes detajeve të kontaktit të publikuara në faqen tonë të internetit</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Përmbajtje të tjera</h1>
+                        <p>Në shërbimet tona një pjesë e përmbajtjes vjen nga përdoruesit, botuesit dhe palët e treta. Edhe pse ne përpiqemi të
+                        rishikojmë përmbajtjen herë pas here, nuk e bëjmë këtë për të gjitha faqet, dhe si rezultat nuk mund dhe nuk duam të
+                        marrim përgjegjësi për çdo përmbajtje që vjen nga të tjerët përmes shërbimeve tona.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Komunikimi elektronik</h1>
+                        <p>Ju pranoni të komunikoni me ne në mënyrë elektronike, përmes postës elektronike, teksteve, njoftimeve, mesazheve ose
+                        përmes shërbimeve të tjera. Ju mund të ruani kopje të këtyre komunikimeve për nevojat tuaja. Ju pranoni që të gjitha
+                        marrëveshjet, njoftimet, informacionet dhe komunikimet e tjera që ju ofrojmë ne në mënyrë elektronike janë të vlefshme
+                        dhe të plota dhe janë ekuivalente me komunikimet me shkrim.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Modifikimi i shërbimeve</h1>
+                        <p>Ne gëzojmë të drejtën në çdo kohë dhe pa paralajmërim paraprak të modifikojmë, korrigjojmë, kufizojmë ose përfundojmë
+                        përkohësisht ose përfundimisht cilindo nga shërbimet ose pjesë të këtyre shërbimeve, ose një pjesë të funksioneve të
+                        këtyre shërbimeve, duke përfshirë çdo aplikacion që tashmë ka nisur. Përveç kësaj, ne gëzojmë të drejtën për të
+                        prezantuar ose paraqitur karakteristika të reja ose aplikacione të reja për të përmirësuar shërbimet tona.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Përshkrim i shërbimit</h1>
+                        <p>Ne përpiqemi të jemi sa më të saktë të jetë e mundur në informacionin që paraqesim, megjithatë, nuk mund të garantojmë
+                        që përshkrimet e shërbimeve ose përmbajtja të jenë efektive 100% nëse nuk është një punë e përbashkët për qëllimin e
+                        kërkuar.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h1>Kthimet dhe Rimbursimet</h1>
+                        <p>Shërbimet që në thelb nuk përputhen me specifikimet, modelin, përshkrimin e shërbimit të porositur, keni të drejtë t’i
+                        ktheni, zëvendësoni ose të rimbursoheni për ato deri sa t’ju kemi paralajmëruar paraprakisht.</p>
+                    </div>
+                </li>
+                  <li>
+                    <div class="timeline-content">
+                        <h1>Kujdesi ndaj klientit</h1>
+                        <p>Kujdesi ndaj klientit ka një rëndësi të veçantë për ne. Nëse keni nevojë për ndihmë në përpunimin e çdo transaksioni,
+                        ndjekjen e porosisë tuaj, ose ndonjë shërbim tjetër, ju keni mundësinë të lidheni drejtpërdrejt me ne.</p>
+                    </div>
+                </li><li>
+                    <div class="timeline-content">
+                        <h1>Informacion për mënyrën e pagesës</h1>
+                        <p>Para ne dorë gjatë dorëzimit,Llogarinë bankare të kurse.kimie.al</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

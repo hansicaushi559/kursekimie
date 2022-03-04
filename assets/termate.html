@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+    
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            html {
+                font-family: "Montserrat";
+            }
+    
+            .container {
+                min-height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 100px 0;
+                background-color: #111;
+            }
+    
+            .timeline {
+                width: 80%;
+                height: auto;
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+            }
+    
+            .timeline ul {
+                list-style: none;
+            }
+    
+            .timeline ul li {
+                padding: 20px;
+                background-color: #1e1f22;
+                color: white;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+    
+            .timeline ul li:last-child {
+                margin-bottom: 0;
+            }
+    
+            .timeline-content h1 {
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+    
+            .timeline-content p {
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 300;
+            }
+    
+            .timeline-content .date {
+                font-size: 12px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
+            }
+    
+            @media only screen and (min-width: 768px) {
+                .timeline:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 2px;
+                    height: 100%;
+                    background-color: gray;
+                }
+    
+                .timeline ul li {
+                    width: 50%;
+                    position: relative;
+                    margin-bottom: 50px;
+                }
+    
+                .timeline ul li:nth-child(odd) {
+                    float: left;
+                    clear: right;
+                    transform: translateX(-30px);
+                    border-radius: 20px 0px 20px 20px;
+                }
+    
+                .timeline ul li:nth-child(even) {
+                    float: right;
+                    clear: left;
+                    transform: translateX(30px);
+                    border-radius: 0px 20px 20px 20px;
+                }
+    
+                .timeline ul li::before {
+                    content: "";
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: gray;
+                    top: 0px;
+                }
+    
+                .timeline ul li:nth-child(odd)::before {
+                    transform: translate(50%, -50%);
+                    right: -30px;
+                }
+    
+                .timeline ul li:nth-child(even)::before {
+                    transform: translate(-50%, -50%);
+                    left: -30px;
+                }
+    
+                .timeline-content .date {
+                    position: absolute;
+                    top: -30px;
+                }
+    
+                .timeline ul li:hover::before {
+                    background-color: aqua;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Terms & Conditions</h1>
+                            <p>Thank you for choosing to use kurse.kimie.al and our services. We will refer to it as "Services".
+                            By using our services, you agree and undertake to fully comply with your obligations under these
+                            Otherwise, we will kindly ask you not to use our services.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Copyright</h1>
+                            <p>Information from kurse.kimie.al is intended only for the individual (ies) who have made the payments for the services
+                            If you are not the intended recipient, please note that any disclosure, copying, distribution or use of the contents
+                            of
+                            this information is prohibited. If you have received this email in error, please contact us immediately
+                            its launcher.
+                            We are committed to protecting copyright and are committed to fully respecting those rights. of
+                            all information in the content, made available or posted through any of our services, such as, but
+                            are not limited to: any text, graphics, logos, images, audio clips, digital downloads, data collected
+                            and / or software are our property, or our contractors', and are protected by copyright law
+                            of the Republic of Albania If during the use of our services you notice that any copyright has been violated,
+                            please do not hesitate to contact us through the contact details published on our website
+                            Other content
+                            In our services part of the content comes from users, publishers and third parties. Although we try to
+                            we review the content from time to time, we do not do this for all pages, and as a result we can not and do not want
+                            to
+                            we take responsibility for any content that comes from others through our services.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Other content</h1>
+                            <p>In our services part of the content comes from users, publishers and third parties.
+                            Although we try to
+                            we review the content from time to time, we do not do this for all pages, and as a result
+                            we can not and do not want to
+                            we take responsibility for any content that comes from others through our services.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Electronic communication</h1>
+                            <p>You agree to communicate with us electronically, via email, text, notifications, messages or
+                            through other services. You can save copies of these communications for your needs. You accept that all
+                            The agreements, notices, information and other communications we provide to you electronically are valid
+                            and complete and are equivalent to written communications.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Modify Services</h1>
+                            <p>We enjoy the right at any time and without notice to modify, correct, limit or terminate
+                            temporarily or permanently any of the services or part of these services, or part of the functions of
+                            these services, including any applications that have already been launched. In addition, we enjoy the right to it
+                            introduce or introduce new features or applications to improve our services.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Service Description</h1>
+                            <p>We strive to be as accurate as possible in the information we provide, however, we can not guarantee
+                            that service descriptions or content be 100% effective unless it is a joint effort for the purpose of
+                            required.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Returns and Refunds</h1>
+                            <p>Services that do not essentially match the specifications, model, description of the ordered service, you have the right
+                            to
+                            return, replace or refund for them until we have given you prior notice.
+                            customer care
+                            Customer care is of particular importance to us. If you need help processing any transaction,
+                            tracking your order, or any other service, you have the opportunity to contact us directly.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Customer care</h1>
+                            <p>Customer care is of particular importance to us. If you need help processing any transaction,
+                            tracking your order, or any other service, you have the opportunity to contact us directly.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h1>Payment method information</h1>
+                            <p>Payment method: Cash on delivery, Bank account of kurse.kimie.al</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    
+    </html>

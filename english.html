@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <title>KURSE.KIMIE.AL</title>
+</head>
+
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Kurse Kimie Projekte</a>
+
+
+
+            <div class="lang-menu">
+                <div class="selected-lang">
+                    English
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="alb">Shqip</a>
+                    </li>
+                    <li>
+                        <a href="english.html" class="en">English</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#share" class="nav__link">About us</a></li>
+                    <li class="nav__item"><a href="#decoration" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#accessory" class="nav__link">Products</a></li>
+
+                    <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__img">
+                    <img src="assets/img/Folder 1.jpg" alt="">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">PREPARATORY COURSES IN CHEMISTRY</h1>
+                    <p class="home__description">Learn the language of science! Overcome difficulties in
+                    chemistry!<br>INVEST IN YOUSELF!</p>
+                    <a href="https://www.youtube.com/channel/UCweYQhBkcShYnBzYuYxx89g?fbclid=IwAR3pc1X6Q7tOW7PO1Yzdvo6iPByW6YJALMrUz37TUEr2eXDi98a0s7OXzUc" class="button fb">GO TO YOUTUBE</a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== SHARE ==========-->
+        <section class="share section bd-container" id="share">
+            <div class="share__container bd-grid">
+                <div class="share__data">
+                    <h2 class="section-title-center">About us</h2>
+                    <p class="share__description">This site was created for you! Let's find out.
+                    At kurse.kimie.al, we deeply believe in the power of teaching - the way we discover ourselves, how to create
+                    the future and, how to see ourselves.
+                    Founded since 2017, kurse.kimie.al is a site created to help
+                    pupils and
+                    students, to facilitate understanding of chemistry. <span id="more"> Community is the most
+                        followed page on instagram. kurse.kimie.al was created for
+                        empowered and highlighted
+                        every aspect of your knowledge.
+                        About 500 students have worked with kurse.kimie.al since 2017, the results are great.
+                        The first page in Albania dedicated only to chemistry in both Albanian and English languages ​​as well
+                        using the E-Learning method
+                        in Albania.
+                        Kurse.kimie.al provides its assistance in Albania, Kosovo, Macedonia </span>
+                    </p>
+                    <button type="button" onclick="read()" id="read" class="button">SEE MORE</button>
+                </div>
+
+                <div class="share__img">
+                    <img src="assets/img/shared.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--========== DECORATION ==========-->
+        <section class="decoration section bd-container" id="decoration">
+            <h2 class="section-title">Our Services</h2>
+            <div class="decoration__container bd-grid">
+                <div class="decoration__data">
+                    <img src="assets/img/Folder 2.jpg" alt="" class="decoration__img dec1">
+                    <h3 class="decoration__title">Learning Courses & Different Packages</h3>
+                    <a href="https://docs.google.com/forms/d/1-yjTeb7T5ZoXRl0l3q-dsUwmA3l8mHvqKPaUsf6m2wY/edit"
+                        class="button button-link">Contact with us</a>
+                </div>
+
+                <div class="decoration__data">
+                    <img src="assets/img/Folder 4.jpg" alt="" class="decoration__img dec1">
+                    <h3 class="decoration__title">Preparation for State Graduation</h3>
+                    <a href="https://docs.google.com/forms/d/1-yjTeb7T5ZoXRl0l3q-dsUwmA3l8mHvqKPaUsf6m2wY/edit"
+                        class="button button-link">Contact with us</a>
+                </div>
+
+                <div class="decoration__data">
+                    <img src="assets/img/Folder 3.jpg" alt="" class="decoration__img dec1">
+                    <h3 class="decoration__title">Course Assignments & National Olympics</h3>
+                    <a href="https://docs.google.com/forms/d/1-yjTeb7T5ZoXRl0l3q-dsUwmA3l8mHvqKPaUsf6m2wY/edit"
+                        class="button button-link">Contact with us</a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== ACCESSORIES ==========-->
+        <section class="accessory section bd-container" id="accessory">
+            <h2 class="section-title">Products</h2>
+
+            <div class="accessory__container bd-grid">
+                <div class="accessory__content">
+                    <img src="assets/img/11.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">General Chemistry</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/15.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Inorganic Chemistry</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/16.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Organic Chemistry</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/20.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Analitic Chemistry</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/9.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Environmental Chemistry</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/17.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Instrumental Method of Analysis</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/1.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Steciometry</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/exam.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Preparation for State Graduation</h3>
+                    <span class="accessory__category">State Graduation</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/s.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Solutions of exercises / theses</h3>
+                    <span class="accessory__category">Solutions of Different Exercises</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="assets/img/decoration2.jpg" alt="" class="accessory__img">
+                    <h3 class="accessory__title">After the School, Study</h3>
+                    <span class="accessory__category">Learning Courses & Packages</span>
+                    <div class="button accessory__button"><i class='bx bx-heart'></i></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--========== SEND GIFT ==========-->
+        <section class="send section">
+            <div class="send__container bd-container bd-grid">
+                <div class="send__content">
+                    <h2 class="section-title-center send__title">Our Announcements</h2>
+                    <p class="send__description">Get the latest notifications about discounts and newer products.
+                    Enter your email address
+                    and receive a personalized email.</p>
+                    <form action="">
+                        <div class="send__direction">
+                            <input type="email" placeholder="E-mail address" class="send__input">
+                            <a href="#" class="button">Send</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="send__img">
+                    <img src="assets/img/email.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="assets/termate.html" class="footer__logo">Terms & Conditions</a>
+                </h3>
+
+            </div>
+
+
+
+
+            <div class="footer__content">
+                <h3 class="footer__title">Contact us</h3>
+                <a href=" +355676079731" class="footer__social"><i class='bx bxl-whatsapp-square'> +355676079731</i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbzwKMJcDNmZbqGnVRDqcTfRXLNNxbnGzSzttxWFMZXQzVTnJSlgZLQBqQZfRthjcjbRL"
+                    class="footer__social"><i class='bx bxs-inbox'> kurse.projekte.official@gmail.com</i></a>
+                <a href="https://www.instagram.com/kurse.kimie.al/" class="footer__social"><i
+                        class='bx bxl-instagram-alt'>
+                        @kurse.kimie.al</i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">@ kurse.kimie.al SINCE 2017 &#169; <br> •ᴇxᴄʟᴜsɪᴠᴇ ᴘᴀɢᴇ ғᴏʀ ᴄʜᴇᴍɪsᴛʀʏ ᴄᴏᴜʀsᴇs•</p>
+    </footer>
+
+
+
+
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="./js/main.js"></script>
+    <script>
+         var i = 0
+            function read() {
+                if (!i) {
+                    document.getElementById("more").style.display = "inline";
+                    document.getElementById("read").innerHTML = "SEE LESS";
+                    i = 1;
+                }
+                else {
+                    document.getElementById("more").style.display = "none";
+                    document.getElementById("read").innerHTML = "SEE MORE";
+                    i = 0;
+                }
+            }
+    </script>
+</body>
+
+</html>
