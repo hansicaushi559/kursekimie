@@ -1,7 +1,8 @@
 # kursekimie
 
 ## About this project
-Kurse Kimie webpage is created with html, css and a little javascript. It is a webpage witch shows information about a private chemistry course.
+The Chemistry courses webpage is built in HTML, CSS and Javascript. The webpage
+is responsive for small devices as well, and it contains a dark mode.
 
 ### Deployed project link
 https://amazing-kirch-bd3deb.netlify.app
